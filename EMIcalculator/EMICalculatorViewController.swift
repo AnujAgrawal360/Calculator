@@ -3,7 +3,7 @@
 //  EMIcalculator1
 //
 //  Created by IE05 on 19/10/24.
-//
+//gcvhjnvmngv nvhbg
 
 import UIKit
 
