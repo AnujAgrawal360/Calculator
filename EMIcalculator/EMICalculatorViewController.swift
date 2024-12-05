@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  EMIcalculator1
-//
+// hello madam
 //  Created by IE05 on 19/10/24.
 //gcvhjnvmngv nvhbg
 
