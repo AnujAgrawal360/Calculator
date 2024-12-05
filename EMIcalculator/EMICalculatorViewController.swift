@@ -9,19 +9,19 @@ import UIKit
 
 class EMICalculatorViewController: UIViewController{
 
-    @IBOutlet private var amountexklghghytfield: UITextField!
-    @IBOutlet private var intresttextfield: UITextField!
-    @IBOutlet private var tenuretextfield: UITextField!
+    @IBOutlet private var amountTextField: UITextField!
+    @IBOutlet private var intrestTextField: UITextField!
+    @IBOutlet private var tenureTextField: UITextField!
     
-    @IBOutlet private var amountstepper: UIStepper!
-    @IBOutlet private var intreststepper: UIStepper!
-    @IBOutlet private var tenurestepper: UIStepper!
+    @IBOutlet private var amountStepper: UIStepper!
+    @IBOutlet private var intrestStepper: UIStepper!
+    @IBOutlet private var tenureStepper: UIStepper!
     
-    @IBOutlet private var amountslider: UISlider!
-    @IBOutlet private var intrestslider: UISlider!
-    @IBOutlet private var tenureslider: UISlider!
+    @IBOutlet private var amountSlider: UISlider!
+    @IBOutlet private var intrestSlider: UISlider!
+    @IBOutlet private var tenureSlider: UISlider!
     
-    @IBOutlet weak var resultlabel: UILabel!
+    @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +45,7 @@ class EMICalculatorViewController: UIViewController{
         }   
     }
     
-    @IBAction private func tenuretextfield(_ sender: UITextField) {
+    @IBAction private func tenureTextfield(_ sender: UITextField) {
         if let value = sender.text {
             if let final = Float(value) {
                 tenureslider.value = final
@@ -70,16 +70,16 @@ class EMICalculatorViewController: UIViewController{
          tenureslider.value = Float(sender.value)
      }
     
-    @IBAction private func amountslider(_ sender: UISlider) {
+    @IBAction private func amountSlider(_ sender: UISlider) {
         amounttextfield.text = String(Int(sender.value))
         amountstepper.value = Double(sender.value)
 
         }
-    @IBAction private func intrestslider(_ sender: UISlider) {
+    @IBAction private func intrestSlider(_ sender: UISlider) {
         intresttextfield.text = String(Int(sender.value))
         intreststepper.value = Double(sender.value)
     }
-    @IBAction private func tenureslider(_ sender: UISlider) {
+    @IBAction private func tenureSlider(_ sender: UISlider) {
         tenuretextfield.text = String(Int(sender.value))
         tenurestepper.value = Double(sender.value)
     }
