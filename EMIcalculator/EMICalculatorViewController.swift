@@ -9,7 +9,7 @@ import UIKit
 
 class EMICalculatorViewController: UIViewController{
 
-    @IBOutlet private var amountextfield: UITextField!
+    @IBOutlet private var amountexklghghytfield: UITextField!
     @IBOutlet private var intresttextfield: UITextField!
     @IBOutlet private var tenuretextfield: UITextField!
     
@@ -85,7 +85,7 @@ class EMICalculatorViewController: UIViewController{
     }
     
     @IBAction private func calButton(_ sender: UIButton) {
-        let amount = Double(amounttextfield.text!)!
+        let amount = Double(amountTextField.text!)!
         let interest = (Double(intresttextfield.text!)! / 12) / 100
         let tenure = Double(tenuretextfield.text!)! * 12
         let cal = pow(1 + interest, tenure)
